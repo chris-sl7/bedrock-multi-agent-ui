@@ -20,7 +20,7 @@ import {
 import PropTypes from 'prop-types';
 import * as AWSAuth from '@aws-amplify/auth';
 import { BedrockAgentRuntimeClient, InvokeAgentCommand } from "@aws-sdk/client-bedrock-agent-runtime";
-import { BedrockAgentCoreClient, InvokeAgentRuntimeCommand } from "@aws-sdk/client-bedrock-agentcore";
+// import { BedrockAgentCoreClient, InvokeAgentRuntimeCommand } from "@aws-sdk/client-bedrock-agentcore";
 import { LambdaClient, InvokeCommand } from "@aws-sdk/client-lambda";
 import './ChatComponent.css';
 
@@ -299,7 +299,7 @@ const ChatComponent = ({ user, onLogout, onConfigEditorClick }) => {
                 throw new Error(chunkEvent.trace.trace.failureTrace.failureReason);
               }
 
-              if (chunkEvent.trace.trace.orchestrationTrace.rationale) {
+              if (chunkEvent.trace?.trace?.orchestrationTrace?.rationale?.text) {
                 tasksCompleted.latestRationale = chunkEvent.trace.trace.orchestrationTrace.rationale.text;
                 scrollToBottom();
               }
