@@ -1,0 +1,29 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-agentui-dev-341cc-authRole",
+      "UnauthRoleArn": "arn:aws:iam::592135149261:role/amplify-agentui-dev-341cc-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::592135149261:role/amplify-agentui-dev-341cc-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-agentui-dev-341cc-deployment",
+      "UnauthRoleName": "amplify-agentui-dev-341cc-unauthRole",
+      "StackName": "amplify-agentui-dev-341cc",
+      "StackId": "arn:aws:cloudformation:us-east-1:592135149261:stack/amplify-agentui-dev-341cc/8015bc30-9a73-11f0-b46f-0e895ccc9dd7",
+      "AmplifyAppId": "d1kw5ldcslwg8b"
+    },
+    "categories": {
+      "auth": {
+        "TraceVizSystem": {}
+      },
+      "function": {
+        "AdminQueriese7118910": {
+          "deploymentBucketName": "amplify-agentui-dev-341cc-deployment",
+          "s3Key": "amplify-builds/AdminQueriese7118910-487454354d4f5677414b-build.zip"
+        }
+      },
+      "api": {
+        "AdminQueries": {}
+      }
+    }
+  }
+}
